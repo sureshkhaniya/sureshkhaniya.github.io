@@ -1,3 +1,11 @@
+.site-header,
+header,
+body,
+main,
+.page {
+  background-color: transparent !important;
+}
+
 * {
   box-sizing: border-box;
 }
