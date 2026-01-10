@@ -8,7 +8,7 @@ body::before {
     content: "";
     position: fixed;
     inset: 0;
-    background: url("../images/portfolio.png") center center no-repeat;
+    background: url("../images/portfolio.jpg") center center no-repeat;
     background-size: contain;   
     opacity: 0.08;              
     z-index: -1;
