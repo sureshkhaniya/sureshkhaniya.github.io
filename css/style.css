@@ -1,20 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
 html, body {
-    margin: 0;
-    padding: 0;
-    min-height: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
 }
 
 body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: url("../images/portfolio.jpg") center center no-repeat;
-    background-size: contain;   
-    opacity: 0.08;              
-    z-index: -1;
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("../images/portfolio.jpg") center center no-repeat;
+  background-size: contain;
+  opacity: 0.06;
+  z-index: -1;
+  pointer-events: none;
 }
 
-
+/* Links */
 a {
   color: #2563eb;
   text-decoration: none;
@@ -103,7 +108,7 @@ a:hover {
   border: 1px solid #e5e7eb;
   border-radius: 8px;
   padding: 25px;
-  background-color: #f9fafb;
+  background-color: #ffffff;
 }
 
 .highlight-card h3 {
