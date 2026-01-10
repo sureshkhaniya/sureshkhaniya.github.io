@@ -1,16 +1,25 @@
-/* Global background for all pages */
 html, body {
-    height: 100%;
     margin: 0;
+    padding: 0;
+    min-height: 100%;
 }
 
-body {
-    background-image: url("../images/portfolio.png");
-    background-size: cover;        /* fills screen */
-    background-position: center;   /* centers image */
-    background-repeat: no-repeat;  /* no tiling */
-    background-attachment: fixed;  /* subtle premium effect */
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("../images/portfolio.png") center center no-repeat;
+    background-size: contain;   
+    opacity: 0.08;              
+    z-index: -1;
+}
+
+.page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
 }
 
 a {
