@@ -40,7 +40,7 @@ The site includes the following sections:
   - World Association Learning Activity (Node.js, Express, EJS)
   - Database Design and Implementation Project (SQL, Relational Modeling)
 - **Experience** — A summary of relevant technical and professional experience.
-- **Resume** — A downloadable PDF version of my resume.
+- **Resume** — A downloadable PDF version of my resume upon Password.
 
 Each project description explains not only *what* was built, but *why* it was built and *which concepts* were applied.
 
