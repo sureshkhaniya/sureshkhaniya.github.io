@@ -5,6 +5,12 @@ main,
 .page {
   background-color: transparent !important;
 }
+/* Prevent horizontal scrolling site-wide */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 /* Make GitHub image fully responsive */
 .github-image {
   display: block;
