@@ -13,7 +13,7 @@
   <h1>Suresh Khaniya</h1>
 </header>
 
-<!-- Resume Page Navigation (placed ABOVE Resume Access) -->
+<!-- Resume Page Navigation -->
 <nav class="resume-nav">
   <a href="index.html">Home</a>
   <a href="projects.html">Projects</a>
@@ -34,11 +34,13 @@
       🔒 Unlock Resume
     </button>
 
-    <!-- HIDDEN by default -->
-    <div id="resumeLink" class="resume-download" style="display:none;">
-      <a href="SK(Resume).pdf" download class="btn-secondary">
-        📄 Download Resume (PDF)
-      </a>
+    <!-- Hidden container (no download shown) -->
+    <div id="resumeLink" style="display:none; margin-top:20px;">
+      <p class="resume-subtext">
+        Access granted. Please email  
+        <a href="mailto:khaniya.su.....__@gmail.com">Suresh Khaniya</a>  
+        to receive the resume.
+      </p>
     </div>
 
   </section>
@@ -52,9 +54,9 @@ function unlock() {
 
   if (pass === "Australia8/461122b@@") {
     link.style.display = "block";
-    message.textContent = "Access granted. You may download the resume below.";
+    message.textContent = "Password verified.";
   } else {
-    link.style.display = "none"; // 🔒 ensure it stays hidden
+    link.style.display = "none";
     message.textContent = "Incorrect password. Please try again.";
   }
 }
