@@ -8,32 +8,34 @@
 
 <body>
 
+<!-- Top Header: Name Only -->
 <header class="site-header">
   <h1>Suresh Khaniya</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="experience.html">Experience</a>
-    <a href="resume.html" class="active">Resume</a>
-  </nav>
 </header>
 
+<!-- Resume Page Navigation (placed ABOVE Resume Access) -->
+<nav class="resume-nav">
+  <a href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="experience.html">Experience</a>
+</nav>
+
+<!-- Resume Access Card -->
 <main class="resume-wrapper">
   <section class="resume-card">
 
     <h2>Resume Access</h2>
+
     <p id="resumeMessage" class="resume-subtext">
-      For privacy reasons, my resume is shared selectively.  
       Please enter the password provided to you.
     </p>
 
-    <div class="resume-actions">
-      <button onclick="unlock()" class="btn-primary">
-        🔒 Unlock Resume
-      </button>
-    </div>
+    <button onclick="unlock()" class="btn-primary">
+      🔒 Unlock Resume
+    </button>
 
-    <div id="resumeLink" class="resume-download">
+    <!-- HIDDEN by default -->
+    <div id="resumeLink" class="resume-download" style="display:none;">
       <a href="SK(Resume).pdf" download class="btn-secondary">
         📄 Download Resume (PDF)
       </a>
@@ -52,6 +54,7 @@ function unlock() {
     link.style.display = "block";
     message.textContent = "Access granted. You may download the resume below.";
   } else {
+    link.style.display = "none"; // 🔒 ensure it stays hidden
     message.textContent = "Incorrect password. Please try again.";
   }
 }
