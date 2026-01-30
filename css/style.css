@@ -5,6 +5,22 @@ main,
 .page {
   background-color: transparent !important;
 }
+/* Make GitHub image fully responsive */
+.github-image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+
+  margin: 24px auto 0;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.resume-card {
+  max-width: 900px;   /* ideal for wide diagrams */
+}
+
 
 * {
   box-sizing: border-box;
