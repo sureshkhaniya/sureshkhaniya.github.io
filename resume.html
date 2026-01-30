@@ -8,19 +8,25 @@
 
 <body>
 
-<!-- Top Header: Name Only -->
+<!-- SAME HEADER AS HOMEPAGE -->
 <header class="site-header">
-  <h1>Suresh Khaniya</h1>
+  <div class="header-content">
+    <h1>Suresh Khaniya</h1>
+    <p class="header-subtitle">
+      Computer Science Student · Software Development · Systems Engineering
+    </p>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="experience.html">Experience</a>
+      <a href="resume.html" class="active">Resume</a>
+    </nav>
+  </div>
 </header>
 
-<!-- Resume Page Navigation -->
-<nav class="resume-nav">
-  <a href="index.html">Home</a>
-  <a href="projects.html">Projects</a>
-  <a href="experience.html">Experience</a>
-</nav>
-
-<!-- Resume Access Card -->
+<!-- RESUME ACCESS -->
 <main class="resume-wrapper">
   <section class="resume-card">
 
@@ -34,12 +40,15 @@
       🔒 Unlock Resume
     </button>
 
-    <!-- Hidden container (no download shown) -->
+    <!-- Hidden container -->
     <div id="resumeLink" style="display:none; margin-top:20px;">
       <p class="resume-subtext">
-        Access granted. Please email  
-        <a href="mailto:khaniya.suresh12@gmail.com">Suresh Khaniya</a>  
-        to receive the resume.
+        Access approved.  
+        Please email  
+        <a href="mailto:khaniya.suresh12@gmail.com">
+          khaniya.suresh12@gmail.com
+        </a>  
+        to receive a copy of my resume.
       </p>
     </div>
 
