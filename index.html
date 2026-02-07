@@ -180,9 +180,13 @@
   let attemptsLeft = 3;
   const correctAnswer = "25";
 
-  function openModal() {
-    document.getElementById("demoModal").style.display = "flex";
+ function openModal() {
+  if (attemptsLeft <= 0) {
+    alert("Demo access locked. No attempts remaining.");
+    return;
   }
+  document.getElementById("demoModal").style.display = "flex";
+}
 
   function closeModal() {
     document.getElementById("demoModal").style.display = "none";
@@ -200,18 +204,30 @@
     if (input === correctAnswer) {
       window.location.href = "MOAB Family Out Land.pdf";
     } else {
-      attemptsLeft--;
-      document.getElementById("attemptInfo").innerText =
-        "Attempts remaining: " + attemptsLeft;
+} else {
+  attemptsLeft = Math.max(0, attemptsLeft - 1);
 
-      if (attemptsLeft <= 0) {
-        alert("Access denied. No attempts remaining.");
-        closeModal();
-      } else {
-        alert("Incorrect answer. Try again.");
-      }
-    }
+  document.getElementById("attemptInfo").innerText =
+    "Attempts remaining: " + attemptsLeft;
+
+  if (attemptsLeft === 0) {
+    alert("Access denied. No attempts remaining.");
+    lockDemo();
+    closeModal();
+  } else {
+    alert("Incorrect answer. Try again.");
   }
+}
+
+    
+  }
+    function lockDemo() {
+  const demoBtn = document.querySelector('[onclick="openModal()"]');
+  if (demoBtn) {
+    demoBtn.classList.add("disabled-btn");
+    demoBtn.removeAttribute("onclick");
+  }
+}
 </script>
 
 
