@@ -5,7 +5,33 @@ main,
 .page {
   background-color: transparent !important;
 }
+.site-footer {
+  margin-top: 60px;
+  padding: 24px 16px;
+  background: transparent;
+  text-align: center;
+}
 
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.site-footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.site-footer a {
+  color: #1f6feb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
 /* Sticky footer layout */
 html, body {
   height: 100%;
