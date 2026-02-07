@@ -174,7 +174,46 @@
     </div>
   </div>
 </div>
+
   
+  <script>
+  let attemptsLeft = 3;
+  const correctAnswer = "25";
+
+  function openModal() {
+    document.getElementById("demoModal").style.display = "flex";
+  }
+
+  function closeModal() {
+    document.getElementById("demoModal").style.display = "none";
+    document.getElementById("answerInput").value = "";
+  }
+
+  function submitAnswer() {
+    const input = document.getElementById("answerInput").value.trim();
+
+    if (!/^\d+$/.test(input)) {
+      alert("Please enter a whole number only.");
+      return;
+    }
+
+    if (input === correctAnswer) {
+      window.location.href = "MOAB Family Out Land.pdf";
+    } else {
+      attemptsLeft--;
+      document.getElementById("attemptInfo").innerText =
+        "Attempts remaining: " + attemptsLeft;
+
+      if (attemptsLeft <= 0) {
+        alert("Access denied. No attempts remaining.");
+        closeModal();
+      } else {
+        alert("Incorrect answer. Try again.");
+      }
+    }
+  }
+</script>
+
 
   
 
