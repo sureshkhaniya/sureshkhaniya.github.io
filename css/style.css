@@ -197,4 +197,75 @@ a:hover {
   margin-bottom: 8px;
   line-height: 1.4;
 }
+/* Page Layout */
+.page-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 40px 120px;
+}
 
+/* Intro text */
+.intro {
+  max-width: 850px;
+  margin-bottom: 100px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* Section headings */
+.overview {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.overview h2 {
+  font-size: 2rem;
+  margin-bottom: 18px;
+  color: #0f172a;
+}
+
+.overview-text {
+  max-width: 750px;
+  margin: 0 auto;
+  color: #334155;
+  line-height: 1.6;
+}
+
+/* Skills grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px;
+}
+
+/* Skill cards */
+.skill-box {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 28px 26px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.skill-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.skill-box h3 {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 1.1rem;
+  color: #020617;
+}
+
+.skill-box ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.skill-box li {
+  margin-bottom: 9px;
+  line-height: 1.5;
+  color: #334155;
+}
