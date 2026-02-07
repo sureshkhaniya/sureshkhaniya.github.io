@@ -40,7 +40,7 @@
   <div class="hero-links">
     <a class="primary-btn" href="projects.html">View Projects</a>
     <a class="primary-btn" href="resume.html">Download Resume</a>
-    <a class="primary-btn" href="MOAB Family Out Land.pdf">Demo</a>
+   <a class="primary-btn" href="#" onclick="checkAnswer()">Demo</a>>
     
   </div>
 </section>
@@ -147,6 +147,37 @@
     <a href="https://www.linkedin.com/in/suresh-khaniya/" target="_blank">LinkedIn</a>
   </p>
 </footer>
+<script>
+  function checkAnswer() {
+    const question =
+      "Two runners start moving toward each other from stations A and B, which are 75 miles apart.\n" +
+      "Runner A runs at 5 m/s and runner B at 10 m/s.\n\n" +
+      "Determine the distance from station A at which they meet.\n" +
+      "(Enter a whole number only)";
+
+    const answer = prompt(question);
+
+    if (answer === null) return; // user canceled
+
+    // Remove spaces and validate integer
+    const cleanedAnswer = answer.trim();
+
+    if (!/^\d+$/.test(cleanedAnswer)) {
+      alert("Please enter a whole number only.");
+      return;
+    }
+
+    if (cleanedAnswer === "25") {
+      window.location.href = "MOAB Family Out Land.pdf";
+    } else {
+      alert("Incorrect answer. Access denied.");
+    }
+  }
+</script>
+
+  
+
+  
 
 </body>
 </html>
