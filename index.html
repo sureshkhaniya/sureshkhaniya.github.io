@@ -40,7 +40,7 @@
   <div class="hero-links">
     <a class="primary-btn" href="projects.html">View Projects</a>
     <a class="primary-btn" href="resume.html">Download Resume</a>
-   <button class="primary-btn" type="button" onclick="openModal()">Demo</button>
+   <button id="demoBtn" class="primary-btn" type="button">Demo</button>
 
 
     
@@ -178,10 +178,12 @@
 
   
   <script>
-  let attemptsLeft = 3;
-  const correctAnswer = "25";
+let attemptsLeft = 3;
+const correctAnswer = "25";
 
- function openModal() {
+document.getElementById("demoBtn").addEventListener("click", openModal);
+
+function openModal() {
   if (attemptsLeft <= 0) {
     alert("Demo access locked. No attempts remaining.");
     return;
@@ -189,25 +191,26 @@
   document.getElementById("demoModal").style.display = "flex";
 }
 
-  function closeModal() {
-    document.getElementById("demoModal").style.display = "none";
-    document.getElementById("answerInput").value = "";
+function closeModal() {
+  document.getElementById("demoModal").style.display = "none";
+  document.getElementById("answerInput").value = "";
+}
+
+function submitAnswer() {
+  const input = document.getElementById("answerInput").value.trim();
+
+  if (!/^\d+$/.test(input)) {
+    alert("Please enter a whole number only.");
+    return;
   }
 
-  function submitAnswer() {
-    const input = document.getElementById("answerInput").value.trim();
+  if (input === correctAnswer) {
+    window.location.href = "MOAB Family Out Land.pdf";
+    return;
+  }
 
-    if (!/^\d+$/.test(input)) {
-      alert("Please enter a whole number only.");
-      return;
-    }
-
-    if (input === correctAnswer) {
-      window.location.href = "MOAB Family Out Land.pdf";
-    } else {
-} else {
+  // WRONG ANSWER
   attemptsLeft = Math.max(0, attemptsLeft - 1);
-
   document.getElementById("attemptInfo").innerText =
     "Attempts remaining: " + attemptsLeft;
 
@@ -220,16 +223,13 @@
   }
 }
 
-    
-  }
-    function lockDemo() {
-  const demoBtn = document.querySelector('[onclick="openModal()"]');
-  if (demoBtn) {
-    demoBtn.classList.add("disabled-btn");
-    demoBtn.removeAttribute("onclick");
-  }
+function lockDemo() {
+  const demoBtn = document.getElementById("demoBtn");
+  demoBtn.disabled = true;
+  demoBtn.classList.add("disabled-btn");
 }
 </script>
+
 
 
   
