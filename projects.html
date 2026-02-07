@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
-  <title>Suresh Khaniya | Portfolio</title>
+  <title>Projects | Suresh Khaniya</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+
 <header class="site-header">
   <div class="header-content">
     <h1>Suresh Khaniya</h1>
@@ -16,259 +16,173 @@
     <nav class="nav-bar">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
+      <a href="projects.html" class="active">Projects</a>
       <a href="experience.html">Experience</a>
       <a href="github.html">GitHub</a>
       <a href="resume.html">Resume</a>
-      
     </nav>
   </div>
-
 </header>
 
+<main class="page-content">
 
-<h1>Academic & Development Projects</h1>
+  <!-- Page Intro -->
+  <section class="projects-intro">
+    <h2>Academic & Development Projects</h2>
+    <p>
+      The projects below represent a progression of academic and practical software
+      development work completed across multiple computer science courses. Together,
+      they demonstrate applied knowledge of programming fundamentals, object-oriented
+      design, database systems, user interface development, and collaborative engineering
+      practices.
+    </p>
+    <p>
+      Each project emphasizes not only functional correctness, but also structure,
+      maintainability, and alignment with real-world software design principles.
+    </p>
+  </section>
 
-<p>
-    The projects listed below represent a progression of academic and practical
-    software development work completed across multiple computer science courses.
-    Together, they demonstrate applied knowledge of programming fundamentals,
-    object-oriented design, database systems, user interface development, and
-    collaborative engineering practices.
-</p>
+  <!-- Projects Grid -->
+  <section class="projects-grid">
 
-<p>
-    Each project emphasizes not only functional correctness, but also structure,
-    maintainability, and alignment with real-world software design principles.
-</p>
+    <!-- Project Card -->
+    <div class="project-card">
+      <h3>Airlines Ticketing & Reservation System</h3>
+      <p class="project-meta">
+        Academic Desktop Application · C#, WPF (XAML), .NET, Microsoft Access
+      </p>
 
-<hr>
+      <p>
+        Desktop-based airline ticketing and reservation system simulating real-world
+        airline operations, including aircraft configuration, seat allocation, and
+        passenger management.
+      </p>
 
-<h2>Airlines Ticketing & Reservation System</h2>
-<p><strong>Project Type:</strong> Academic Desktop Application</p>
-<p><strong>Technical Stack:</strong> C#, WPF (XAML), .NET, Microsoft Access (ADO.NET)</p>
+      <ul>
+        <li><p>Managed flights, passenger registration, and dynamic seat assignment with enforced business rules.</p></li>
+        <li><p>Implemented relational data persistence with clear separation between UI and data access layers.</p></li>
+        <li><p>Designed structured WPF interfaces with validation and event-driven interaction.</p></li>
+      </ul>
 
-<p>
-    This project is a desktop-based airline ticketing and reservation system
-    designed to simulate real-world airline operations with a focus on aircraft
-    configuration, seat allocation, and passenger management.
-</p>
+      <p><strong>Core Competencies:</strong> OOP, Desktop Application Design, Database Integration</p>
+      <p><strong>Future Enhancements:</strong> Pricing tiers, role-based authentication, SQL migration</p>
 
-<p>
-    The system allows users to manage flights, register passengers, and assign
-    seats dynamically based on aircraft capacity. Business rules are enforced to
-    prevent overbooking and to ensure that seat assignments remain consistent
-    across all reservations.
-</p>
+      <a href="https://github.com/sureshkhaniya/airlines" target="_blank" class="project-link">
+        View Source Code →
+      </a>
+    </div>
 
-<p>
-    A relational database backend is used to persist passenger, flight, and
-    reservation data. Data access responsibilities are separated from the user
-    interface through dedicated service and manager classes, reinforcing clean
-    architectural boundaries.
-</p>
+    <!-- Project Card -->
+    <div class="project-card">
+      <h3>Banking System Application</h3>
+      <p class="project-meta">
+        Academic Software Project · Java
+      </p>
 
-<p>
-    The user interface was developed using WPF and XAML, emphasizing structured
-    layouts, input validation, and event-driven interaction. This project
-    highlights how desktop applications coordinate real-time user input with
-    backend data storage.
-</p>
+      <p>
+        Java-based banking system simulating account creation, deposits, withdrawals,
+        and balance inquiries with enforced business rules and defensive programming.
+      </p>
 
-<p>
-    <strong>Core Competencies:</strong>
-    Object-Oriented Design, Desktop Application Development, Database Integration,
-    Seat Allocation Logic, Event-Driven Programming
-</p>
+      <ul>
+        <li><p>Applied object-oriented principles including encapsulation and responsibility separation.</p></li>
+        <li><p>Validated inputs and prevented invalid transactions through defensive logic.</p></li>
+      </ul>
 
-<p>
-    <strong>Future Enhancements:</strong>
-    Introduce pricing tiers by seat class, implement authentication roles
-    (agent vs administrator), and migrate to a scalable SQL-based backend.
-</p>
+      <p><strong>Core Competencies:</strong> Business Logic Design, Input Validation</p>
+      <p><strong>Future Enhancements:</strong> Persistence, authentication, concurrency control</p>
 
-<p>
-    <a href="https://github.com/sureshkhaniya/airlines" target="_blank">
-        View Source Code
-    </a>
-</p>
+      <a href="https://github.com/sureshkhaniya/Banking-System-Project" target="_blank" class="project-link">
+        View Source Code →
+      </a>
+    </div>
 
-<hr>
+    <!-- Project Card -->
+    <div class="project-card">
+      <h3>RV Park Management System (Team Project)</h3>
+      <p class="project-meta">
+        Team-Based Academic Project · Java, Web Technologies
+      </p>
 
-<h2>Banking System Application</h2>
-<p><strong>Project Type:</strong> Academic Software Development Project</p>
-<p><strong>Technical Stack:</strong> Java</p>
+      <p>
+        Collaborative system modeling operational workflows for an RV park,
+        including reservations, customer records, and administrative operations.
+      </p>
 
-<p>
-    This project involved the design and implementation of a Java-based banking
-    system that simulates core financial operations such as account creation,
-    deposits, withdrawals, and balance inquiries.
-</p>
+      <ul>
+        <li><p>Worked in a shared codebase using version control to manage collaboration.</p></li>
+        <li><p>Applied requirement analysis, task delegation, and modular system design.</p></li>
+      </ul>
 
-<p>
-    The application enforces strict business rules to ensure valid transactions
-    and system consistency. Defensive programming techniques were applied to
-    handle invalid inputs and prevent logical errors.
-</p>
+      <p><strong>Core Competencies:</strong> Team Collaboration, Modular Design, Version Control</p>
+      <p><strong>Future Enhancements:</strong> Role-based access, reporting tools, UI improvements</p>
 
-<p>
-    A strong emphasis was placed on object-oriented principles, including
-    encapsulation, responsibility separation, and maintainable class design.
-    The system models realistic banking workflows while remaining extensible
-    for future features.
-</p>
+      <a href="https://github.com/JarrydWilliam/rv_park_TEAM_PROJECT" target="_blank" class="project-link">
+        View Source Code →
+      </a>
+    </div>
 
-<p>
-    <strong>Core Competencies:</strong>
-    Business Logic Design, Input Validation,
-    Defensive Programming
-</p>
+    <!-- Project Card -->
+    <div class="project-card">
+      <h3>Word Association Learning Activity</h3>
+      <p class="project-meta">
+        Upper-Division Academic Application · Node.js, Express, EJS
+      </p>
 
-<p>
-    <strong>Future Enhancements:</strong>
-    Add persistent storage, authentication mechanisms, and concurrency controls
-    to more closely resemble real-world banking systems.
-</p>
+      <p>
+        Multi-module Node.js application designed to reinforce server-side routing,
+        templating, and role-based application workflows.
+      </p>
 
-<p>
-    <a href="https://github.com/sureshkhaniya/Banking-System-Project" target="_blank">
-        View Source Code
-    </a>
-</p>
+      <ul>
+        <li><p>Implemented GET/POST routing and dynamic EJS form rendering.</p></li>
+        <li><p>Introduced role-based workflow separation between users and administrators.</p></li>
+        <li><p>Designed architecture ready for future database integration.</p></li>
+      </ul>
 
-<hr>
+      <p><strong>Core Competencies:</strong> Express Routing, EJS Templating, Form Handling</p>
+      <p><strong>Future Enhancements:</strong> Persistent storage, authentication, analytics</p>
 
-<h2>RV Park Management System (Team Project)</h2>
-<p><strong>Project Type:</strong> Team-Based Academic Project</p>
-<p><strong>Technical Stack:</strong> Java, Web Technologies</p>
+      <a href="https://github.com/sureshkhaniya/Expand-The-Word-Association-App/tree/main/wordassociation"
+         target="_blank" class="project-link">
+        View Source Code →
+      </a>
+    </div>
 
-<p>
-    The RV Park Management System was developed as a collaborative team project
-    focused on modeling operational workflows for a recreational vehicle park.
-    The system manages reservations, customer records, and operational data
-    using a modular software structure.
-</p>
+    <!-- Project Card -->
+    <div class="project-card">
+      <h3>Database Design & Implementation Project</h3>
+      <p class="project-meta">
+        Academic Database Project · SQL
+      </p>
 
-<p>
-    This project emphasized teamwork, planning, and coordination within a shared
-    codebase. Version control tools were used to manage contributions, resolve
-    conflicts, and integrate independently developed components.
-</p>
+      <p>
+        Relational database design project focusing on schema creation, normalization,
+        and query development with enforced data integrity.
+      </p>
 
-<p>
-    The project reinforced real-world software development practices such as
-    requirement analysis, task delegation, and incremental feature integration.
-</p>
+      <ul>
+        <li><p>Designed normalized schemas with referential integrity constraints.</p></li>
+        <li><p>Developed SQL queries for data retrieval, manipulation, and analysis.</p></li>
+      </ul>
 
-<p>
-    <strong>Core Competencies:</strong>
-    Team Collaboration, Requirement Analysis, Modular Design, Version Control
-</p>
+      <p><strong>Core Competencies:</strong> Relational Design, SQL Query Development</p>
+      <p><strong>Future Enhancements:</strong> Application-layer integration and optimization</p>
 
-<p>
-    <strong>Future Enhancements:</strong>
-    Add role-based access control, reporting tools, and improved user interface
-    workflows for administrative users.
-</p>
+      <a href="https://github.com/sureshkhaniya/Database/blob/main/Database.txt"
+         target="_blank" class="project-link">
+        View Source Code →
+      </a>
+    </div>
 
-<p>
-    <a href="https://github.com/JarrydWilliam/rv_park_TEAM_PROJECT" target="_blank">
-        View Source Code
-    </a>
-</p>
+  </section>
 
-<hr>
-
-<h2>Word Association Learning Activity (Node.js / Express / EJS)</h2>
-<p><strong>Project Type:</strong> Upper-Division Academic Application (Multi-Module)</p>
-<p><strong>Technical Stack:</strong> Node.js, Express.js, EJS, JavaScript, HTML/CSS</p>
-
-<p>
-    The Word Association Learning Activity is an iterative Node.js application
-    developed across multiple modules to reinforce user interface design,
-    server-side routing, and application structure using Express and EJS.
-</p>
-
-<p>
-    The application includes a user registration workflow where users submit
-    personal and demographic information through dynamically rendered EJS forms.
-    Additional user fields were identified through documentation review and
-    integrated using appropriate form controls.
-</p>
-
-<p>
-    Express routers handle both GET and POST requests, and browser developer
-    tools were used to inspect network traffic and verify correct form submission
-    behavior. The application also introduces role-based workflows by separating
-    administrative views from standard user interactions.
-</p>
-
-<p>
-    While the current implementation uses simulated data, the architecture is
-    intentionally designed to support database integration in later modules.
-</p>
-
-<p>
-    <strong>Core Competencies:</strong>
-    Express Routing (GET/POST), EJS Templating, Form Handling, UI Design,
-    Role-Based Application Structure
-</p>
-
-<p>
-    <strong>Future Enhancements:</strong>
-    Integrate persistent storage, implement real statistical queries, and expand
-    authentication and authorization features.
-</p>
-
-<p>
-    <a href="https://github.com/sureshkhaniya/Expand-The-Word-Association-App/tree/main/wordassociation" target="_blank">
-        View Source Code
-    </a>
-</p>
-
-<hr>
-
-<h2>Database Design and Implementation Project</h2>
-<p><strong>Project Type:</strong> Academic Database Project</p>
-<p><strong>Technical Stack:</strong> SQL, Relational Databases</p>
-
-<p>
-    This project focused on the design and implementation of a relational
-    database system, including schema creation, table relationships, and data
-    normalization to ensure integrity and consistency.
-</p>
-
-<p>
-    SQL queries were written to retrieve, manipulate, and analyze data while
-    enforcing referential integrity constraints. The project highlights how
-    database design decisions directly impact application behavior and
-    performance.
-</p>
-
-<p>
-    <strong>Core Competencies:</strong>
-    Relational Database Design, SQL Query Development, Normalization,
-    Data Integrity
-</p>
-
-<p>
-    <strong>Future Enhancements:</strong>
-    Integrate the database with an application layer and apply indexing and
-    optimization strategies for larger datasets.
-</p>
-
-<p>
-    <a href="https://github.com/sureshkhaniya/Database/blob/main/Database.txt" target="_blank">
-        View Source Code
-    </a>
-</p>
-
-<hr>
-
-<p>
+  <p class="projects-footer">
     Additional projects and ongoing development work can be found on my
     <a href="https://github.com/sureshkhaniya" target="_blank">GitHub profile</a>.
-</p>
+  </p>
+
+</main>
 
 </body>
 </html>
