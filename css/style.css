@@ -206,30 +206,35 @@ a:hover {
 
 /* Intro text */
 .intro {
-  max-width: 850px;
-  margin-bottom: 100px;
+  max-width: 700px;        /* tighter, cleaner */
+  margin: 0 auto 80px;     /* centered horizontally */
+  text-align: center;      /* matches Technical Focus */
   font-size: 1.05rem;
   line-height: 1.7;
+  color: #334155;
 }
 
 /* Section headings */
 .overview {
+  max-width: 900px;          /* keeps it aligned with content */
+  margin: 0 auto 70px;       /* centers the whole block */
   text-align: center;
-  margin-bottom: 70px;
+  padding: 0 20px;           /* prevents edge crowding on mobile */
 }
 
 .overview h2 {
   font-size: 2rem;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
   color: #0f172a;
 }
 
 .overview-text {
-  max-width: 750px;
+  max-width: 700px;          /* slightly tighter = cleaner */
   margin: 0 auto;
   color: #334155;
   line-height: 1.6;
 }
+
 
 /* Skills grid */
 .skills-grid {
