@@ -6,11 +6,7 @@ main,
   background-color: transparent !important;
 }
 
-.disabled-btn {
-  opacity: 0.4;
-  cursor: not-allowed;
-  pointer-events: none;
-}
+
 
 /* MODAL OVERLAY */
 .modal-overlay {
