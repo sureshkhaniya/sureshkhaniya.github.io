@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let visible = true;
   setInterval(() => {
-    typing.textContent = visible ? "AI Version of Suresh is in progress!!! ▍" : "Suresh likes Yadi, who is ghosting him, and yet he finds her attractive and WIFE Material";
+    typing.textContent = visible ? "AI Version of Suresh is in progress!!! ▍" : "I know my limitation, but my boss is out of the league";
     visible = !visible;
   }, 600);
 
