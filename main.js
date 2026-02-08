@@ -64,8 +64,8 @@ document.addEventListener("DOMContentLoaded", () => {
     chat.appendChild(msg);
   }
 
-  addMessage("Hello. This interface demonstrates an AI-style system UI.");
-  addMessage("What does this do?", true);
+  addMessage("Hello. Welcome to SureshChatBot.");
+  addMessage("Suresh is my Boss. Any Misendeavor shall be notified to him directly.", true);
 
   const typing = document.createElement("div");
   typing.textContent = "Thinking ▍";
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let visible = true;
   setInterval(() => {
-    typing.textContent = visible ? "Thinking ▍" : "Thinking ";
+    typing.textContent = visible ? "AI Version of Suresh is in progress!!! ▍" : "Thinking ";
     visible = !visible;
   }, 600);
 
