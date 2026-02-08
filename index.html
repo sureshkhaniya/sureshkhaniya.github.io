@@ -229,6 +229,27 @@ function lockDemo() {
   demoBtn.classList.add("disabled-btn");
 }
 </script>
+  
+<script>
+const observer = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.transform = "translateY(0)";
+        entry.target.style.opacity = "1";
+      }
+    });
+  },
+  { threshold: 0.2 }
+);
+
+document.querySelectorAll(".skill-box").forEach(box => {
+  box.style.opacity = "0";
+  box.style.transform = "translateY(20px)";
+  box.style.transition = "all 0.5s ease";
+  observer.observe(box);
+});
+</script>
 
 
 
