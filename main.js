@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   addMessage("Hello. Welcome to SureshChatBot.");
-  addMessage("Suresh is my Boss.Any misuse within this interface will be flagged within this simulated environment for review.", true);
+  addMessage("Suresh is my Successful Boss.Any misuse within this interface will be flagged within this simulated environment for review.", true);
 
   const typing = document.createElement("div");
   typing.textContent = "Thinking ▍";
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let visible = true;
   setInterval(() => {
-    typing.textContent = visible ? "AI Version of Suresh is in progress!!! ▍" : "Thinking ";
+    typing.textContent = visible ? "AI Version of Suresh is in progress!!! ▍" : "Suresh likes Yadi, who is ghosting him, and yet he finds her attractive and WIFE Material";
     visible = !visible;
   }, 600);
 
