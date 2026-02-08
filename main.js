@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   addMessage("Hello. Welcome to SureshChatBot.");
-  addMessage("Suresh is my Boss. Any Misendeavor shall be notified to him directly.", true);
+  addMessage("Suresh is my Boss.Any misuse within this interface will be flagged within this simulated environment for review.", true);
 
   const typing = document.createElement("div");
   typing.textContent = "Thinking ▍";
