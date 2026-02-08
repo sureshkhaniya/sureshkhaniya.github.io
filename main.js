@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let visible = true;
   setInterval(() => {
-    typing.textContent = visible ? "AI Version of Suresh is in progress!!! ▍" : "I know my limitation, but my boss is out of the league";
+    typing.textContent = visible ? "AI Version of Suresh is in progress!!! ▍" : "System note: limitations detected. Supervisor override enabled.";
     visible = !visible;
   }, 600);
 
