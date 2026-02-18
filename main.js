@@ -103,15 +103,15 @@ document.addEventListener("DOMContentLoaded", () => {
 // ===== CLOCK =====
 
 function updateClock() {
-  const now = new Date();
+ const now = new Date();
 
-  const seconds = now.getSeconds();
-  const minutes = now.getMinutes();
-  const hours = now.getHours();
+  const seconds = now.getSeconds() + now.getMilliseconds() / 1000;
+  const minutes = now.getMinutes() + seconds / 60;
+  const hours = (now.getHours() % 12) + minutes / 60;
 
   const secondsRotation = seconds * 6;
   const minutesRotation = minutes * 6;
-  const hoursRotation = (hours % 12) * 30 + minutes / 2;
+  const hoursRotation = hours * 30;
 
   const secRing = document.querySelector(".seconds-ring");
   const minRing = document.querySelector(".minutes-ring");
@@ -135,6 +135,11 @@ function updateClock() {
   if (dateElement) dateElement.innerText = now.toLocaleDateString();
 }
 
-setInterval(updateClock, 1000);
-updateClock();
+// 60 FPS smooth animation
+function animateClock() {
+  updateClock();
+  requestAnimationFrame(animateClock);
+}
+
+animateClock();
 
