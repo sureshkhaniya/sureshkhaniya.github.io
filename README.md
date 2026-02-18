@@ -11,9 +11,7 @@
 
 ## 🚀 Overview
 
-This repository contains the source code for my professional digital portfolio.
-
-It is not merely a collection of coursework artifacts.  
+This repository contains the source code for my professional digital portfolio. It is not merely a collection of coursework artifacts.  
 It is a structured representation of how I approach software engineering — deliberately, methodically, and with long-term clarity in mind.
 
 > I do not build projects to satisfy requirements.  
@@ -114,13 +112,3 @@ Software should be:
 - Performance optimization audit
 - Security hardening review
 
----
-
-## 📬 Contact
-
-- GitHub: https://github.com/sureshkhaniya  
-- Portfolio: https://sureshkhaniya.github.io  
-- LinkedIn: *(Add your link here)*  
-- Email: *(Add your professional email)*  
-
----
