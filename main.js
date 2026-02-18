@@ -99,3 +99,42 @@ document.addEventListener("DOMContentLoaded", () => {
   aiContainer.append(header, chat, inputRow);
   aiRoot.appendChild(aiContainer);
 });
+
+// ===== CLOCK =====
+
+function updateClock() {
+  const now = new Date();
+
+  const seconds = now.getSeconds();
+  const minutes = now.getMinutes();
+  const hours = now.getHours();
+
+  const secondsRotation = seconds * 6;
+  const minutesRotation = minutes * 6;
+  const hoursRotation = (hours % 12) * 30 + minutes / 2;
+
+  const secRing = document.querySelector(".seconds-ring");
+  const minRing = document.querySelector(".minutes-ring");
+  const hourRing = document.querySelector(".hours-ring");
+
+  if (!secRing || !minRing || !hourRing) return;
+
+  secRing.style.transform = `rotate(${secondsRotation}deg)`;
+  minRing.style.transform = `rotate(${minutesRotation}deg)`;
+  hourRing.style.transform = `rotate(${hoursRotation}deg)`;
+
+  const dayNames = [
+    "Sunday","Monday","Tuesday",
+    "Wednesday","Thursday","Friday","Saturday"
+  ];
+
+  const dayElement = document.getElementById("dayName");
+  const dateElement = document.getElementById("dateDisplay");
+
+  if (dayElement) dayElement.innerText = dayNames[now.getDay()];
+  if (dateElement) dateElement.innerText = now.toLocaleDateString();
+}
+
+setInterval(updateClock, 1000);
+updateClock();
+
