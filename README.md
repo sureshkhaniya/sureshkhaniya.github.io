@@ -1,62 +1,69 @@
+[![Live Portfolio](https://img.shields.io/badge/Live-Portfolio-0A66C2?style=for-the-badge&logo=github)](https://sureshkhaniya.github.io)
+[![GitHub](https://img.shields.io/badge/Source-Code-181717?style=for-the-badge&logo=github)](https://github.com/sureshkhaniya)
+
 # Digital Portfolio — Suresh Khaniya
 
-This repository contains the source code for my professional digital portfolio, developed as part of my upper-division Computer Science coursework. The portfolio is designed to present my academic projects, technical experience, and professional readiness in a clear, structured, and publicly accessible format.
-
-Rather than focusing on visual embellishment, the emphasis of this portfolio is on **clarity of thought, technical substance, and intentional presentation**. Each section has been carefully written to provide meaningful context for the work displayed, ensuring that projects are not merely listed, but properly introduced and explained.
-
----
-
-##  Live Site
-
-The portfolio is publicly available at:
-
-**https://sureshkhaniya.github.io**
-
----
-
-##  Purpose & Philosophy
-
-The intent behind this portfolio is twofold:
-
-1. **Academic Demonstration**  
-   To document and communicate the skills, concepts, and methodologies developed through structured coursework, including software design, user interface development, backend routing, and database fundamentals.
-
-2. **Professional Readiness**  
-   To present my work in a manner consistent with industry expectations, emphasizing maintainability, correctness, and thoughtful system design over superficial aesthetics.
-
-This portfolio reflects an understanding that effective software engineering is as much about **communication and structure** as it is about code.
-
----
-
-## Portfolio Contents
-
-The site includes the following sections:
-
-- **Home** — A concise overview of my academic focus and technical interests.
-- **About** — Background information, technical orientation, and areas of focus.
-- **Projects** — Detailed descriptions of selected academic and development projects, including:
-  - Banking System Application (Java, OOP)
-  - RV Park Management System (Team-Based Development)
-  - World Association Learning Activity (Node.js, Express, EJS)
-  - Database Design and Implementation Project (SQL, Relational Modeling)
-- **Experience** — A summary of relevant technical and professional experience.
-- **Resume** — A downloadable PDF version of my resume upon Password.
-
-Each project description explains not only *what* was built, but *why* it was built and *which concepts* were applied.
-
----
-
-##  Technologies & Tools
-
-This portfolio and its associated projects reflect experience with:
-
-- **Languages:** Java, JavaScript, SQL  
-- **Backend & Frameworks:** Node.js, Express.js, EJS  
-- **Concepts:** Object-Oriented Design, Routing (GET/POST), UI Design, Database Normalization  
-- **Tools:** Git, GitHub, Browser Developer Tools  
-- **Deployment:** GitHub Pages (static site hosting)
-
----
+# Digital Portfolio — Suresh Khaniya
 
 
+Digital Portfolio — Suresh Khaniya
+Engineering With Intent
 
+This repository contains the source code for my professional digital portfolio. It is not merely a collection of coursework artifacts; it is a structured representation of how I approach software engineering — deliberately, methodically, and with long-term clarity in mind.
+
+I do not build projects to satisfy requirements.
+I build systems to understand structure, constraints, and scalability.
+
+🌐 Live Portfolio
+
+View the deployed portfolio:
+👉 https://sureshkhaniya.github.io
+
+This live environment reflects the current production version of the site and demonstrates structured front-end architecture, modular organization, and intentional UI presentation.
+
+Professional Summary
+
+I am a Computer Science student focused on software engineering, systems automation, and full-stack development. My work emphasizes architectural clarity, disciplined documentation, and maintainable code.
+
+I approach engineering with long-term thinking — prioritizing structure, separation of concerns, and reproducibility over superficial complexity.
+
+Technical Stack
+
+Languages
+JavaScript · Python · Java · C++ · Bash
+
+Frontend
+React · HTML5 · CSS3
+
+Backend
+Node.js · Express.js
+
+Database
+MongoDB · SQL
+
+Systems & DevOps
+Linux · Git · GitHub · npm · Log automation · CI/CD concepts
+
+Featured Work
+Advanced Log Management System
+
+A Bash-based automation tool implementing log rotation, compression, and structured archival practices. Demonstrates system-level scripting discipline and defensive error handling.
+
+AlgoGauge (MERN Stack Application)
+
+A full-stack educational platform for algorithm visualization built using React, Node.js, and MongoDB. Focused on modular architecture and environment-based configuration management.
+
+Engineering Philosophy
+
+Software should be:
+
+Readable before clever
+
+Secure before scalable
+
+Structured before expanded
+
+Documented before deployed
+
+Good code runs.
+Great systems endure.
