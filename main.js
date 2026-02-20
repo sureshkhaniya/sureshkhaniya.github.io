@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   addMessage("Hello. Welcome to SureshChatBot.");
   addMessage("Suresh is my Successful Boss.Any misuse within this interface will be flagged within this simulated environment for review.", true);
-  addMessage("Suresh is in awe of a latina name Leticia Rodriguez. Suresh is in love!!!!!.", true);
+  addMessage(`Suresh is in awe of a latina name "Leticia Rodriguez". Suresh is in love!!!!!.`, true);
   
 
   const typing = document.createElement("div");
