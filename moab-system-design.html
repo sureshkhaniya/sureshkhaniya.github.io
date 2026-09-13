@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MOAB Family RV Park reservation system design case study led by Suresh Khaniya.">
+  <meta name="theme-color" content="#060811">
+  <title>MOAB System Design | Suresh Khaniya</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/portfolio-v3.css?v=3">
+  <link rel="stylesheet" href="./css/pages-v3.css?v=3">
+  <style>
+    .dossier-shell{display:grid;gap:20px}.dossier-hero{max-width:none}.dossier-meta{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0}.artifact-frame{width:100%;height:min(74vh,820px);margin-top:24px;border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:0 22px 70px rgba(0,0,0,.24)}.artifact-links{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}.artifact-links .secondary-btn{min-height:40px}.dossier-note{margin-top:16px;color:var(--muted);font-size:.78rem;line-height:1.65}.dossier-facts{margin-top:22px}.dossier-facts .project-card{min-height:0}.dossier-facts strong{display:block;margin-bottom:8px;color:var(--soft);font-size:.92rem}.dossier-facts p{margin:0}.case-proof{margin-top:20px}@media(max-width:760px){.artifact-frame{height:62vh}.artifact-links{display:grid;grid-template-columns:1fr}.artifact-links .secondary-btn{width:100%}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <a class="brand" href="index.html" aria-label="Suresh Khaniya home">
+        <span class="brand-mark">SK</span>
+        <span class="brand-copy"><strong>Suresh Khaniya</strong><small>Software · Systems · AI</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span></button>
+      <nav class="nav-bar" id="mainNav" aria-label="Primary navigation">
+        <a href="index.html">Home</a><a href="about.html">About</a><a class="active" href="projects.html">Projects</a><a href="experience.html">Experience</a><a href="github.html">GitHub</a><a href="resume.html">Resume</a><a class="nav-cta" href="mailto:khaniyasuresh12@gmail.com">Let's connect</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-content dossier-shell">
+    <section class="resume-card dossier-hero reveal">
+      <p class="eyebrow">System design dossier · Team lead</p>
+      <h2>MOAB Family RV Park Reservation System</h2>
+      <p class="resume-subtext">A requirements-and-design case study for replacing paper records and phone reservations with a responsive reservation platform covering availability, booking, payments, role-based operations, reporting, auditability, and system design artifacts.</p>
+      <div class="dossier-meta chip-row">
+        <span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">MySQL</span><span class="chip">Bootstrap</span><span class="chip">Stripe</span><span class="chip">UML</span><span class="chip">ERD</span><span class="chip">Requirements</span>
+      </div>
+      <div class="contact-row">
+        <a class="primary-btn" href="./MOAB%20Family%20Out%20Land.pdf" target="_blank" rel="noopener">Open full design PDF ↗</a>
+        <a class="secondary-btn" href="https://github.com/JarrydWilliam/rv_park_TEAM_PROJECT" target="_blank" rel="noopener">Source repository ↗</a>
+        <a class="secondary-btn" href="projects.html">Back to projects</a>
+      </div>
+    </section>
+
+    <section class="projects-grid dossier-facts" aria-label="MOAB system design highlights">
+      <article class="project-card reveal"><strong>The problem</strong><p>The design targets a manual campground process built around paper records and phone reservations, where double bookings, inconsistent tracking, and payment delays can occur.</p></article>
+      <article class="project-card reveal"><strong>Three operating roles</strong><p>Customer, Employee, and Admin workflows are separated with role-aware reservation, account, reporting, pricing, and management capabilities.</p></article>
+      <article class="project-card reveal"><strong>Core constraints</strong><p>Reservations must prevent overlapping double-bookings. Payments are linked to reservations and customers, while categories, sites, rates, and availability remain manageable by staff.</p></article>
+      <article class="project-card reveal"><strong>Reliability thinking</strong><p>The requirements target 99.5% monthly uptime, comfortable concurrency for roughly 50 staff and 200 customers, audit logs, operational metrics, alerts, and rate-limited authentication.</p></article>
+    </section>
+
+    <section class="resume-value reveal">
+      <p class="eyebrow">Visual architecture</p>
+      <h3>Jump straight into the engineering artifacts.</h3>
+      <p>The document includes a UML use-case model, activity diagrams, a class model, reservation sequence flow, an entity-relationship model, and working UI mockups. The embedded viewer opens directly on the ER diagram; the links below jump to the most useful visual sections.</p>
+      <div class="artifact-links">
+        <a class="secondary-btn" href="./MOAB%20Family%20Out%20Land.pdf#page=8" target="_blank" rel="noopener">Use-case + activity diagrams ↗</a>
+        <a class="secondary-btn" href="./MOAB%20Family%20Out%20Land.pdf#page=14" target="_blank" rel="noopener">Reservation sequence ↗</a>
+        <a class="secondary-btn" href="./MOAB%20Family%20Out%20Land.pdf#page=15" target="_blank" rel="noopener">ER diagram ↗</a>
+        <a class="secondary-btn" href="./MOAB%20Family%20Out%20Land.pdf#page=16" target="_blank" rel="noopener">Customer UI mockups ↗</a>
+        <a class="secondary-btn" href="./MOAB%20Family%20Out%20Land.pdf#page=22" target="_blank" rel="noopener">Admin dashboard ↗</a>
+      </div>
+      <iframe class="artifact-frame" src="./MOAB%20Family%20Out%20Land.pdf#page=15&view=FitH" title="MOAB Family RV Park system design document"></iframe>
+      <p class="dossier-note">If your browser blocks embedded PDF viewing, use “Open full design PDF” above. Page anchors are included so hiring managers can jump directly to the architecture artifacts instead of searching the document.</p>
+    </section>
+
+    <section class="resume-value case-proof reveal">
+      <p class="eyebrow">What this demonstrates</p>
+      <h3>Requirements translated into a system, not just a screen.</h3>
+      <ul class="about-bullets">
+        <li><p>Stakeholder analysis across customer, employee, and administrator responsibilities.</p></li>
+        <li><p>Functional design for accounts, reservations, payments, site categories, pricing, reporting, search, and access control.</p></li>
+        <li><p>Non-functional thinking around availability, concurrency, logging, security, monitoring, and modular service boundaries.</p></li>
+        <li><p>Visual modeling through UML, sequence flows, ER design, and UI mockups before implementation.</p></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-inner"><span>© <span id="year"></span> Suresh Khaniya · Software · Systems · AI</span><span class="footer-links"><a href="https://github.com/sureshkhaniya" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/suresh-khaniya/" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:khaniyasuresh12@gmail.com">Email</a></span></div></footer>
+  <script src="./main-v3.js?v=3"></script>
+</body>
+</html>
