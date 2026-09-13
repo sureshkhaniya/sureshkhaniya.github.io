@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/portfolio-v3.css?v=3">
+  <link rel="stylesheet" href="./css/chatbot-v4.css?v=4">
 </head>
 <body>
   <header class="site-header">
@@ -266,10 +267,10 @@
             </div>
 
             <div class="console-body" id="consoleBody" aria-live="polite">
-              <p class="message">Ask me for a concise factual summary of Suresh's background, strengths, impact, AI/ML foundation, projects, technologies, or experience.</p>
+              <p class="message">Loading Suresh's AI portfolio concierge…</p>
             </div>
 
-            <div class="console-prompts">
+            <div class="console-prompts is-locked">
               <button class="prompt-btn" type="button" data-question="Summarize Suresh's background">Background</button>
               <button class="prompt-btn" type="button" data-question="What stands out about Suresh's strengths?">Strengths</button>
               <button class="prompt-btn" type="button" data-question="What are the key impact metrics?">Impact</button>
@@ -278,10 +279,10 @@
             </div>
 
             <form class="console-form" id="consoleForm">
-              <input class="console-input" id="consoleInput" type="text" placeholder="Ask about projects, systems, AI, experience..." aria-label="Ask the portfolio guide" autocomplete="off">
-              <button class="console-send" type="submit" aria-label="Send question">→</button>
+              <input class="console-input" id="consoleInput" type="text" placeholder="Your name" aria-label="Chat with Suresh's portfolio assistant" autocomplete="off">
+              <button class="console-send" type="submit" aria-label="Send message">→</button>
             </form>
-            <p class="console-note">Curated browser-side portfolio demo. No visitor question is sent to an external AI service.</p>
+            <p class="console-note">Your details stay in this browser until you choose to email Suresh.</p>
           </div>
         </div>
       </div>
@@ -315,6 +316,6 @@
     </div>
   </footer>
 
-  <script src="./main-v3.js?v=3"></script>
+  <script src="./main-v3.js?v=4"></script>
 </body>
 </html>
