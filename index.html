@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/portfolio-v3.css?v=3">
+  <link rel="stylesheet" href="./css/build-section.css?v=1">
   <link rel="stylesheet" href="./css/chatbot-v4.css?v=4">
 </head>
 <body>
@@ -31,6 +32,7 @@
         <a class="active" href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="projects.html">Projects</a>
+        <a href="#build">Build</a>
         <a href="experience.html">Experience</a>
         <a href="github.html">GitHub</a>
         <a href="resume.html">Resume</a>
@@ -164,6 +166,128 @@
             <p class="project-copy">Team-led reservation-system design replacing paper and phone workflows with online booking, Stripe payments, role-based operations, reporting, auditability, UML models, an ER design, and UI mockups.</p>
             <div class="tags"><span>Requirements</span><span>UML / ERD</span><span>Role-based access</span></div>
           </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section build-section" id="build">
+      <div class="shell">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-kicker">Engineering case study</p>
+            <h2>How I built this portfolio.</h2>
+          </div>
+          <p>The portfolio itself is a software project: a static-first interface, responsive component system, interactive portfolio assistant, deliberate deployment choices, and an architecture designed to grow into a secure AI-backed experience.</p>
+        </div>
+
+        <div class="build-layout">
+          <div class="build-map reveal">
+            <div class="build-map-top">
+              <span class="build-map-label">Current architecture</span>
+              <span class="build-live">LIVE ON GITHUB PAGES</span>
+            </div>
+            <h3>Fast in the browser. Simple to deploy. Ready to evolve.</h3>
+            <p class="build-map-copy">I kept the current site intentionally lightweight. The interface, animations, responsive behavior, and portfolio concierge all run in the browser, while GitHub provides version control and static deployment.</p>
+
+            <div class="arch-flow" aria-label="Current portfolio architecture">
+              <div class="arch-node">
+                <span class="arch-node-index">01</span>
+                <strong>Visitor</strong>
+                <span>Desktop or mobile browser</span>
+              </div>
+              <div class="arch-node">
+                <span class="arch-node-index">02</span>
+                <strong>HTML + CSS</strong>
+                <span>Semantic structure and responsive visual system</span>
+              </div>
+              <div class="arch-node">
+                <span class="arch-node-index">03</span>
+                <strong>JavaScript</strong>
+                <span>Interactions, animation, and local portfolio knowledge</span>
+              </div>
+              <div class="arch-node">
+                <span class="arch-node-index">04</span>
+                <strong>GitHub Pages</strong>
+                <span>Versioned static hosting and deployment</span>
+              </div>
+            </div>
+
+            <div class="build-badges" aria-label="Portfolio engineering qualities">
+              <span>Static-first</span>
+              <span>Responsive</span>
+              <span>Accessible focus states</span>
+              <span>Reduced-motion support</span>
+              <span>No AI secret in the browser</span>
+            </div>
+          </div>
+
+          <aside class="build-side reveal" aria-label="Current and planned AI architecture">
+            <div class="build-stage">
+              <span class="build-stage-tag">Current</span>
+              <h3>Local portfolio concierge</h3>
+              <p>The assistant currently answers from curated portfolio knowledge in JavaScript. That keeps this public GitHub Pages build safe and dependency-light while the real AI backend is being designed.</p>
+              <div class="build-mini-flow" aria-hidden="true">
+                <span>Browser</span><i>→</i><span>JS knowledge</span><i>→</i><span>Response</span>
+              </div>
+            </div>
+            <div class="build-stage next">
+              <span class="build-stage-tag">Next architecture</span>
+              <h3>Secure AI service</h3>
+              <p>A production AI upgrade will route requests through a serverless API so model credentials remain server-side instead of being exposed in public frontend code.</p>
+              <div class="build-mini-flow" aria-hidden="true">
+                <span>Portfolio</span><i>→</i><span>Secure API</span><i>→</i><span>AI model</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="build-card-grid">
+          <article class="build-card reveal">
+            <div class="build-card-top"><span class="build-card-icon">FE</span><span class="build-card-num">01</span></div>
+            <h3>Frontend</h3>
+            <p>Semantic HTML, custom CSS, and JavaScript keep the site fast, understandable, and easy to maintain without unnecessary framework overhead.</p>
+          </article>
+
+          <article class="build-card reveal">
+            <div class="build-card-top"><span class="build-card-icon">AI</span><span class="build-card-num">02</span></div>
+            <h3>Portfolio assistant</h3>
+            <p>The current concierge uses curated knowledge, streamed-looking replies, conversation state, lead capture, and a direct email handoff experience.</p>
+          </article>
+
+          <article class="build-card reveal">
+            <div class="build-card-top"><span class="build-card-icon">SEC</span><span class="build-card-num">03</span></div>
+            <h3>Security decisions</h3>
+            <p>I do not place model API credentials in public GitHub Pages code. The real AI version is designed around a server-side secret and a controlled API boundary.</p>
+          </article>
+
+          <article class="build-card reveal">
+            <div class="build-card-top"><span class="build-card-icon">UX</span><span class="build-card-num">04</span></div>
+            <h3>Responsive UX</h3>
+            <p>Layouts collapse intentionally across breakpoints, navigation becomes mobile-friendly, interactive targets stay usable, and reduced-motion preferences are respected.</p>
+          </article>
+
+          <article class="build-card reveal">
+            <div class="build-card-top"><span class="build-card-icon">CI</span><span class="build-card-num">05</span></div>
+            <h3>Deployment</h3>
+            <p>GitHub is the source of truth. Each portfolio change is versioned in the repository and published through the GitHub Pages workflow.</p>
+          </article>
+
+          <article class="build-card reveal">
+            <div class="build-card-top"><span class="build-card-icon">DBG</span><span class="build-card-num">06</span></div>
+            <h3>Engineering challenges</h3>
+            <p>The interesting work is balancing visual polish, mobile behavior, truthful AI capability, public-repository security, maintainability, and fast loading.</p>
+          </article>
+        </div>
+
+        <div class="build-truth reveal">
+          <span class="build-truth-mark">//</span>
+          <span><strong>Built to stay truthful:</strong> the site labels the current assistant as a local knowledge experience instead of pretending it is already connected to a live AI model. When the secure backend goes live, this architecture section can evolve with it.</span>
+        </div>
+
+        <div class="build-actions reveal">
+          <a class="btn-primary" href="https://github.com/sureshkhaniya/sureshkhaniya.github.io" target="_blank" rel="noopener">View portfolio source <span aria-hidden="true">↗</span></a>
+          <a class="btn-secondary" href="#ai">Explore the portfolio assistant</a>
+          <a class="btn-secondary" href="projects.html">See more projects</a>
         </div>
       </div>
     </section>
