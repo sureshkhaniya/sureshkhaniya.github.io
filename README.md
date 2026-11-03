@@ -8,6 +8,7 @@
 <p align="center"><i>Engineering With Intent</i></p>
 
 ---
+Portfolio site deployment refresh.
 
 ## 🚀 Overview
 
